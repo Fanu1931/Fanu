@@ -1,0 +1,80 @@
+Sure! Here’s a sample README file for your GitHub project that implements both tasks:
+
+# Employee Management and String Manipulation
+
+This repository contains a Java program that implements a class hierarchy for employees and a function to remove duplicate characters from a string. 
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Class Hierarchy](#class-hierarchy)
+- [Removing Duplicate Characters](#removing-duplicate-characters)
+- [Usage](#usage)
+- [Requirements](#requirements)
+- [Testing](#testing)
+
+## Overview
+
+The program demonstrates polymorphism through an abstract class `Employee` and its subclasses: `Manager`, `Developer`, and `Intern`. Each subclass overrides the `work()` method to describe its specific responsibilities.
+
+Additionally, the program includes a function that removes duplicate characters from a given string while preserving the original order of characters.
+
+## Class Hierarchy
+
+1. **Employee (Abstract Class)**
+   - Fields: `name`, `salary`
+   - Method: `abstract void work()`
+
+2. **Manager (Subclass of Employee)**
+   - Overrides `work()` to output: "Manager [name] is managing the project."
+
+3. **Developer (Subclass of Employee)**
+   - Overrides `work()` to output: "Developer [name] is coding the application."
+
+4. **Intern (Subclass of Employee)**
+   - Overrides `work()` to output: "Intern [name] is learning and assisting the team."
+
+## Removing Duplicate Characters
+
+The function `removeDuplicates(String input)` takes a string as input and returns a new string with duplicate characters removed, preserving the order of their first appearance.
+
+## Usage
+
+To run the program:
+
+1. Clone this repository:
+   
+   git clone https://github.com/yourusername/EmployeeManagement.git
+   cd EmployeeManagement
+  
+
+2. Compile the Java files:
+   
+   javac Main.java
+   
+
+3. Run the program:
+   
+   java Main
+   
+
+4. Follow the prompts to enter a string and view the output for both employee tasks and duplicate character removal.
+
+## Requirements
+
+- Java Development Kit (JDK) 8 or later
+
+## Testing
+
+The program has been tested with various inputs to ensure correctness:
+
+- Employee list includes:
+  - Manager: John
+  - Developer: Alice
+  - Intern: Bob
+
+- Test string inputs for duplicate removal, e.g., "Hello, World!"
+
+Feel free to explore, modify, and enhance the code as needed!
+
+Make sure to replace `yourusername` with your actual GitHub username and update any other details specific to your project!
