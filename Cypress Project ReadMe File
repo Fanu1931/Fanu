@@ -1,0 +1,94 @@
+Here's a sample README file for your Cypress automation project. You can customize it as needed to fit your project specifics.
+
+# TutorialsNinja Cypress Automation
+
+## Overview
+
+This project automates the search functionality on the TutorialsNinja demo site using Cypress. The script follows the Page Object Model (POM) for better maintainability and structure. It includes automated tests for different search scenarios and validations.
+
+## Table of Contents
+
+- [Prerequisites](#prerequisites)
+- [Setup Environment](#setup-environment)
+- [Writing the Script](#writing-the-script)
+- [Running the Tests](#running-the-tests)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+
+- **Node.js**: Make sure you have Node.js installed on your machine.
+- **VSCode**: Install Visual Studio Code for editing the project files.
+- **Cypress**: This project uses Cypress for end-to-end testing.
+
+## Setup Environment
+
+1. **Clone the Repository**:
+   ```bash
+   git clone <your-github-repo-url>
+   cd <your-project-folder>
+   ```
+
+2. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
+
+3. **Open Cypress**:
+   ```bash
+   npx cypress open
+   ```
+
+4. **Run Tests**:
+   You can run the tests either through the Cypress UI or by using the command line:
+   ```bash
+   npx cypress run
+   ```
+
+## Writing the Script
+
+The automation script is structured following the Page Object Model. Key functionalities covered include:
+
+- **Search for existing products**.
+- **Search for non-existing products**.
+- **Submit empty search**.
+- **Search for criteria resulting in multiple products**.
+
+### Key Files
+
+- `cypress/integration/search.spec.js`: Contains the test cases.
+- `cypress/pages/SearchPage.js`: Implements the Page Object Model for search functionalities.
+- `cypress/fixtures/testData.json`: Contains test data for search operations.
+
+## Running the Tests
+
+To run the automated tests, use the Cypress Test Runner or the command line as mentioned above. The results of the tests will be displayed in the Cypress dashboard.
+
+## Project Structure
+
+```
+tutorialsninja-cypress-automation/
+├── cypress/
+│   ├── fixtures/
+│   │   └── testData.json
+│   ├── integration/
+│   │   └── search.spec.js
+│   └── pages/
+│       └── SearchPage.js
+├── node_modules/
+├── package.json
+└── README.md
+```
+
+## Contributing
+
+Contributions are welcome! If you have suggestions for improvements, feel free to create a pull request.
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes and commit them (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Open a pull request.
